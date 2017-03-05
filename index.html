@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Christina S Thompson</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Questrial|Permanent+Marker|Montserrat:400,400i,500i" rel="stylesheet">
+     <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id="name">
+        <h1>Christina <span id="starr">[ Starr ]</span> Thompson</h1>
+      </div>
+      <div id="intro">
+        <p>Curator of <a href="https://bit.ly/r-e-m-e-d-i" id="playlist" class="styled-links">Playlists</a>. Engineer at <a href="https://www.artsy.net" id="artsy" class="styled-links">Artsy</a>. Interdiscilinary learner.</p>
+      </div>
+      <ul id="social-links">
+        <li>
+          <a href="https://www.instagram.com/xtina_starr/" id="instagram">intsagram</a>
+        </li>
+        <li>
+          <a href="https://www.twitter.com/xtina_starr/" id="twitter">twitter</a>
+        </li>
+        <li>
+          <a href="https://www.github.com/xtina-starr/" id="github">github</a>
+        </li>
+      </ul>
+    </div>
+  </body>
+
+  <script type="text/javascript">
+    $('a').hover(function(e) {
+      var linkType = $(e.currentTarget).attr('id');
+      var $body = $('body');
+      switch(linkType) {
+        case 'playlist':
+          $body.css('background-color', '#1ED760');
+          break;
+        case 'artsy':
+          $body.css('background-color', '#6e1fff');
+          break;
+        case 'instagram':
+          $body.css('background-color', '#8a3ab9');
+          break;
+        case 'twitter':
+          $body.css('background-color', '#46b9f1');
+          break;
+        case 'github':
+          $body.css('background-color', '#0366d6');
+          break;
+        default:
+        $body.css('background-color', 'white');
+      }   
+    }).mouseleave( function () {
+      $('body').css('background-color', 'white')
+    })
+  </script>
+
+</html>
