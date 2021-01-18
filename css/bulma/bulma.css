@@ -496,7 +496,7 @@ table th {
 
 @media screen and (max-width: 768px) {
   .subtitle p {
-    font-size: 1.5rem !important;
+    font-size: 1rem !important;
   }
 
   .is-size-1-mobile {
@@ -552,7 +552,7 @@ table th {
 
 @media screen and (max-width: 1023px) {
   .subtitle p {
-    font-size: 1.5rem !important;
+    font-size: 1.5rem;
   }
 
   .is-size-1-touch {
@@ -2261,6 +2261,12 @@ fieldset[disabled] .button {
   padding-left: 32px;
   padding-right: 32px;
   width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin: 0 20px;
+  }
 }
 
 @media screen and (min-width: 1024px) {
