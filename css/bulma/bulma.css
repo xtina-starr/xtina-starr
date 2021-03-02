@@ -9729,11 +9729,11 @@ label.panel-block:hover {
 }
 
 .hero.is-info {
-  /* background-color: #3298dc; */
-  background-image: url('../../images/xtina_image1.jpg');
+  background-image: url('../../images/xtina_image_min.jpg');
   background-size: cover;
   background-position: center center;
   color: #fff;
+  background-color: black;
 }
 
 .hero.is-info a:not(.button):not(.dropdown-item):not(.tag):not(.pagination-link.is-current),
